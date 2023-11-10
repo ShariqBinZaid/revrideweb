@@ -31,22 +31,24 @@
 
 <body class="">
     <header class="">
+
         <div class="fluid-container container logo-bg-relative">
             <!-- <div class="row"> -->
             <div class="logo-bg">
                 <a href="{{ route('welcome') }}">
-                    <img src="{{ asset('assets/images/logo-bg.webp') }}" alt="">
+                    <img src="{{ asset('assets/images/logo-bg.png') }}" alt="">
                 </a>
             </div>
             <div class="big-container container">
                 <div class="logo">
                     <a href="{{ route('welcome') }}">
-                        <img src="{{ asset('assets/images/logo.webp') }}" alt="">
+                        <img src="assets/images/logo.png" alt="">
                     </a>
                 </div>
             </div>
             <!-- </div> -->
         </div>
+
         <div class="fluid-container container p-0">
             <div class="top-header">
                 <div class="big-container container">
@@ -125,10 +127,10 @@
                     </div>
                     <div class="col-lg-3">
                         <ul class="social-icons header-social-icons">
-                            <li><a href="https://www.facebook.com/people/Revv-Ride-INC/61552723623580/"><i
+                            <li><a href="https://www.facebook.com/people/Revv-Ride-INC/61552723623580/" target="_blank"><i
                                         class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://twitter.com/RevvRide"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube" target="_blank"></i></a></li>
+                            <li><a href="https://twitter.com/RevvRide" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -145,7 +147,7 @@
                             <div class="widget">
                                 <div class="fot-logo mb-20">
                                     <a href="{{ route('welcome') }}">
-                                        <img src="{{ asset('assets/images/logo.webp') }}" alt="">
+                                        <img src="{{ asset('assets/images/logo.png') }}" alt="">
                                     </a>
                                 </div>
                                 <ul class="fot-contact-list mb-20">
@@ -158,10 +160,11 @@
                                             support@example.com</a></li>
                                 </ul>
                                 <ul class="social-icons fot-social-icons">
-                                    <li><a href="https://www.facebook.com/people/Revv-Ride-INC/61552723623580/"><i
-                                                class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/RevvRide"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/people/Revv-Ride-INC/61552723623580/"
+                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/RevvRide" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -189,21 +192,21 @@
                                 <h4>INSTAGRAM</h4>
                                 <hr class="seperator">
                                 <ul class="insta-list">
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i1.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i1.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i2.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i2.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i3.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i3.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i4.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i4.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i5.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i5.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i6.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i6.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i7.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i7.jpg') }}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{ asset('assets/images/inta-i8.webp') }}"
+                                    <li><a href="#"><img src="{{ asset('assets/images/i8.jpg') }}"
                                                 alt=""></a></li>
                                 </ul>
                             </div>
@@ -216,6 +219,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
