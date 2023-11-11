@@ -22,12 +22,6 @@ use App\Http\Controllers\ToursController;
 
 Route::get('/', [FrontController::class, 'index'])->name('welcome');
 
-Route::controller(FrontController::class)->group(function () {
-    Route::get('about', 'abouts')->name('abouts');
-    Route::get('sports', 'sports')->name('sports');
-    Route::get('tours', 'tours')->name('tours');
-    Route::get('blogs', 'blogs')->name('blogs');
-});
 
 // ************************ Abouts  ************************ //
 Route::resource('about', AboutsController::class);
@@ -45,6 +39,7 @@ Route::controller(RentalsController::class)->group(function () {
 Route::resource('tours', ToursController::class);
 Route::controller(ToursController::class)->group(function () {
     Route::get('tours', 'index')->name('tours');
+    Route::get('tours-details/{slug}/{id}', 'inner')->name('tourinner');
 });
 
 // ************************ Blogs  ************************ //
@@ -57,6 +52,7 @@ Route::controller(BlogsController::class)->group(function () {
 Route::resource('contacts', ContactsController::class);
 Route::controller(ContactsController::class)->group(function () {
     Route::get('contacts', 'index')->name('contacts');
+    Route::post('subscribe', 'subscribe')->name('subscribe.form');
 });
 
 

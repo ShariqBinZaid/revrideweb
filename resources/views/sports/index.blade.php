@@ -80,7 +80,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -99,7 +99,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -118,7 +118,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -137,7 +137,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -156,7 +156,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -175,7 +175,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -194,7 +194,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -213,7 +213,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -232,7 +232,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -256,7 +256,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -275,7 +275,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -294,7 +294,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -313,7 +313,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -332,7 +332,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -351,7 +351,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -370,7 +370,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -389,7 +389,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -408,7 +408,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -432,7 +432,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -451,7 +451,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -470,7 +470,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -489,7 +489,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -508,7 +508,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -527,7 +527,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -546,7 +546,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -565,7 +565,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -584,7 +584,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -608,7 +608,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -627,7 +627,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -646,7 +646,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -665,7 +665,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -684,7 +684,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -703,7 +703,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -722,7 +722,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -741,7 +741,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -760,7 +760,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -784,7 +784,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -803,7 +803,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -822,7 +822,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -841,7 +841,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -860,7 +860,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -879,7 +879,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -898,7 +898,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -917,7 +917,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -936,7 +936,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -960,7 +960,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -979,7 +979,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -998,7 +998,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1017,7 +1017,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1036,7 +1036,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1055,7 +1055,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1074,7 +1074,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1093,7 +1093,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1112,7 +1112,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1136,7 +1136,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1155,7 +1155,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1174,7 +1174,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1193,7 +1193,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1212,7 +1212,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1231,7 +1231,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1250,7 +1250,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1269,7 +1269,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1288,7 +1288,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1312,7 +1312,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1331,7 +1331,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1350,7 +1350,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1369,7 +1369,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1388,7 +1388,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1407,7 +1407,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1426,7 +1426,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1445,7 +1445,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1464,7 +1464,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1488,7 +1488,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1507,7 +1507,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1526,7 +1526,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1545,7 +1545,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1564,7 +1564,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1583,7 +1583,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1602,7 +1602,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1621,7 +1621,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1640,7 +1640,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1664,7 +1664,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1683,7 +1683,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1702,7 +1702,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1721,7 +1721,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1740,7 +1740,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1759,7 +1759,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1778,7 +1778,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1797,7 +1797,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1816,7 +1816,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1840,7 +1840,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j9.png" alt="">
+                                                <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1859,7 +1859,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j1.png" alt="">
+                                                <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1878,7 +1878,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j2.png" alt="">
+                                                <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1897,7 +1897,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j3.png" alt="">
+                                                <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1916,7 +1916,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j4.png" alt="">
+                                                <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1935,7 +1935,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j5.png" alt="">
+                                                <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1954,7 +1954,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j6.png" alt="">
+                                                <img src="{{ asset('assets/images/j6.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1973,7 +1973,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j7.png" alt="">
+                                                <img src="{{ asset('assets/images/j7.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -1992,7 +1992,7 @@
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
                                             <div class="popular-activity-box-img">
-                                                <img src="assets/images/j8.png" alt="">
+                                                <img src="{{ asset('assets/images/j8.png') }}" alt="">
                                             </div>
                                             <div class="popular-activity-box-content popular-page-activity-box-content">
                                                 <div>
@@ -2020,7 +2020,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j9.png" alt="">
+                                    <img src="{{ asset('assets/images/j9.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>
@@ -2039,7 +2039,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j1.png" alt="">
+                                    <img src="{{ asset('assets/images/j1.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>
@@ -2058,7 +2058,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j2.png" alt="">
+                                    <img src="{{ asset('assets/images/j2.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>
@@ -2077,7 +2077,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j3.png" alt="">
+                                    <img src="{{ asset('assets/images/j3.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>
@@ -2096,7 +2096,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j4.png" alt="">
+                                    <img src="{{ asset('assets/images/j4.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>
@@ -2115,7 +2115,7 @@
                         <a href="sports-detail.php">
                             <div class="popular-page-activity-box">
                                 <div class="popular-activity-box-img">
-                                    <img src="assets/images/j5.png" alt="">
+                                    <img src="{{ asset('assets/images/j5.png') }}" alt="">
                                 </div>
                                 <div class="popular-activity-box-content popular-page-activity-box-content">
                                     <div>

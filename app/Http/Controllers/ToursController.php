@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tours;
+use App\Models\ToursImages;
 use Illuminate\Http\Request;
 
 class ToursController extends Controller
@@ -12,7 +13,21 @@ class ToursController extends Controller
      */
     public function index()
     {
-        return view('tours.index');
+        $tours = Tours::get();
+        $data['tours'] = $tours;
+        $data['tourrecommendeds'] = $tours->where('recommended', '1')->take(2);
+
+        $start = \Carbon\Carbon::parse($tours->min('start_date'));
+        $end = \Carbon\Carbon::parse($tours->max('end_date'));
+        $data['duration'] = $start->diff($end);
+
+        return view('tours.index')->with($data);
+    }
+
+    public function inner($id)
+    {
+        $inners = Tours::where('id', $id)->get();
+        return view('tours.inner')->with(['inners' => $inners]);
     }
 
     /**

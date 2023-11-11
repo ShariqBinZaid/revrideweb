@@ -47,339 +47,382 @@
 
     <section class="best-spots-sec pt-5">
         <div class="fluid-container container p-0">
-           <div class="p-50">
-              <div class="container">
-                 <div class="row">
-                    <div class="col-lg-12">
-                       <div class="best-spots-content text-center mb-50">
-                          <h4 class="sub-hd">Athletic Hotspots</h4>
-                          <hr class="seperator">
-                          <h2 class="primary-hd">Daringly Popular Routes </h2>
-                       </div>
+            <div class="p-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="best-spots-content text-center mb-50">
+                                <h4 class="sub-hd">Athletic Hotspots</h4>
+                                <hr class="seperator">
+                                <h2 class="primary-hd">Daringly Popular Routes </h2>
+                            </div>
+                        </div>
                     </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-lg-8">
-                       <div class="best-spots-content mb-20">
-                          <h4 class="sub-hd">YOUR RESULT FOUND</h4>
-                       </div>
-                       <ul class="best-spots-list">
-                          <li>
-                             <div class="best-spots-box tour-best-spots-box fill-shadow">
-                                <div class="best-spots-box-img">
-                                   <div class="best-spots-box-img-content">
-                                      <h6>01 Aug - 10 Aug</h6>
-                                   </div>
-                                   <img src="assets/images/s4.jpg" alt="">
-                                </div>
-                                <div class="best-spots-box-content">
-                                   <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                   <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                   <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
-                                   <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                   <ul class="best-spots-box-list mb-20">
-                                      <li>
-                                         <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                      </li>
-                                   </ul>
-                                   <div class="best-spots-box-btn-and-price">
-                                      <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div>
-                                      <div class="best-spots-box-price">
-                                         <h4>$550+Tax</h4>
-                                         <h6>Per adult</h6>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </li>
-                          <li>
-                             <div class="best-spots-box tour-best-spots-box fill-shadow">
-                                <div class="best-spots-box-img">
-                                   <div class="best-spots-box-img-content">
-                                      <h6>01 Aug - 10 Aug</h6>
-                                   </div>
-                                   <img src="assets/images/s1.jpg" alt="">
-                                </div>
-                                <div class="best-spots-box-content">
-                                   <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                   <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                   <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
-                                   <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                   <ul class="best-spots-box-list mb-20">
-                                      <li>
-                                         <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                      </li>
-                                   </ul>
-                                   <div class="best-spots-box-btn-and-price">
-                                      <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div>
-                                      <div class="best-spots-box-price">
-                                         <h4>$550+Tax</h4>
-                                         <h6>Per adult</h6>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </li>
-                          <li>
-                             <div class="best-spots-box tour-best-spots-box fill-shadow">
-                                <div class="best-spots-box-img">
-                                   <div class="best-spots-box-img-content">
-                                      <h6>01 Aug - 10 Aug</h6>
-                                   </div>
-                                   <img src="assets/images/s2.jpg" alt="">
-                                </div>
-                                <div class="best-spots-box-content">
-                                   <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                   <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                   <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
-                                   <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                   <ul class="best-spots-box-list mb-20">
-                                      <li>
-                                         <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                      </li>
-                                   </ul>
-                                   <div class="best-spots-box-btn-and-price">
-                                      <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div>
-                                      <div class="best-spots-box-price">
-                                         <h4>$550+Tax</h4>
-                                         <h6>Per adult</h6>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </li>
-                          <li>
-                             <div class="best-spots-box tour-best-spots-box fill-shadow">
-                                <div class="best-spots-box-img">
-                                   <div class="best-spots-box-img-content">
-                                      <h6>01 Aug - 10 Aug</h6>
-                                   </div>
-                                   <img src="assets/images/s3.jpg" alt="">
-                                </div>
-                                <div class="best-spots-box-content">
-                                   <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                   <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                   <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
-                                   <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                   <ul class="best-spots-box-list mb-20">
-                                      <li>
-                                         <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                      </li>
-                                      <li>
-                                         <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                      </li>
-                                   </ul>
-                                   <div class="best-spots-box-btn-and-price">
-                                      <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div>
-                                      <div class="best-spots-box-price">
-                                         <h4>$550+Tax</h4>
-                                         <h6>Per adult</h6>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </li>
-                       </ul>
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="best-spots-content mb-20">
+                                <h4 class="sub-hd">YOUR RESULT FOUND</h4>
+                            </div>
+                            <ul class="best-spots-list">
 
-                    <div class="col-lg-4">
-                       <div class="best-spots-content mb-20">
-                          <h4 class="sub-hd">RECOMMENDED</h4>
-                       </div>
-                       <ul class="recomded-list mb-5">
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="recomended-box fill-shadow">
-                                   <div class="best-spots-box-img recomended-spots-box-img">
-                                      <div class="recomended-spots-box-img-content">
-                                         <h6>$550+Tax</h6>
-                                         <p>Per adult</p>
-                                      </div>
-                                      <img src="assets/images/r1.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-10"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <ul class="best-spots-box-list recomended-spots-box-list">
-                                         <li>
-                                            <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                         </li>
-                                         <li>
-                                            <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                         </li>
-                                         <li>
-                                            <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                         </li>
-                                      </ul>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="recomended-box fill-shadow">
-                                   <div class="best-spots-box-img recomended-spots-box-img">
-                                      <div class="recomended-spots-box-img-content">
-                                         <h6>$550+Tax</h6>
-                                         <p>Per adult</p>
-                                      </div>
-                                      <img src="assets/images/r2.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-10"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <ul class="best-spots-box-list recomended-spots-box-list">
-                                         <li>
-                                            <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                         </li>
-                                         <li>
-                                            <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                         </li>
-                                         <li>
-                                            <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                         </li>
-                                      </ul>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                       </ul>
-                       <div class="best-spots-content mb-20">
-                          <h4 class="sub-hd">BEST OFFER</h4>
-                       </div>
-                       <ul class="best-offer-list">
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="best-spots-box best-offer-box ">
-                                   <div class="best-spots-box-img best-offer-box-img">
-                                      <div class="best-spots-box-img-content best-offer-box-img-content">
-                                         <h6>- 20%</h6>
-                                      </div>
-                                      <img src="assets/images/o1.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <div class="best-spots-box-btn-and-price">
-                                         <!-- <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div> -->
-                                         <div class="best-spots-box-price">
-                                            <h4>$550+Tax <span>Per adult</span></h4>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="best-spots-box best-offer-box">
-                                   <div class="best-spots-box-img best-offer-box-img">
-                                      <div class="best-spots-box-img-content best-offer-box-img-content">
-                                         <h6>- 20%</h6>
-                                      </div>
-                                      <img src="assets/images/o2.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <div class="best-spots-box-btn-and-price">
-                                         <!-- <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div> -->
-                                         <div class="best-spots-box-price">
-                                            <h4>$550+Tax <span>Per adult</span></h4>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="best-spots-box best-offer-box">
-                                   <div class="best-spots-box-img best-offer-box-img">
-                                      <div class="best-spots-box-img-content best-offer-box-img-content">
-                                         <h6>- 20%</h6>
-                                      </div>
-                                      <img src="assets/images/o3.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <div class="best-spots-box-btn-and-price">
-                                         <!-- <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div> -->
-                                         <div class="best-spots-box-price">
-                                            <h4>$550+Tax <span>Per adult</span></h4>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                          <li>
-                             <a href="tour-detail.php">
-                                <div class="best-spots-box best-offer-box">
-                                   <div class="best-spots-box-img best-offer-box-img">
-                                      <div class="best-spots-box-img-content best-offer-box-img-content">
-                                         <h6>- 20%</h6>
-                                      </div>
-                                      <img src="assets/images/o4.jpg" alt="">
-                                   </div>
-                                   <div class="best-spots-box-content">
-                                      <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                      <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United States</span>
-                                      <div class="best-spots-box-btn-and-price">
-                                         <!-- <div class="best-spots-box-btn">
-                                         <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                      </div> -->
-                                         <div class="best-spots-box-price">
-                                            <h4>$550+Tax <span>Per adult</span></h4>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </a>
-                          </li>
-                       </ul>
+                                @foreach ($tours as $tour)
+                                    <li>
+                                        <div class="best-spots-box tour-best-spots-box fill-shadow">
+                                            <div class="best-spots-box-img">
+                                                <div class="best-spots-box-img-content">
+                                                    {{-- <h6>01 Aug - 10 Aug</h6> --}}
+                                                    <h6>{{ Carbon\Carbon::parse($tour->start_date)->format('d M') . ' - ' . Carbon\Carbon::parse($tour->end_date)->format('d M') }}
+                                                    </h6>
+
+                                                </div>
+                                                @if (count($tour->Images) != 0)
+                                                    <img src="{{ asset('storage/' . $tour->Images[0]->image) }}"
+                                                        alt="{{ $tour->title }}">
+                                                @endif
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">{{ $tour->title }}</h4>
+                                                <span class="mb-20"><i
+                                                        class="fas fa-map-marker-alt"></i>{{ $tour->locations }}</span>
+                                                <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
+                                                <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i></div>
+                                                <ul class="best-spots-box-list mb-20">
+                                                    {{-- <li>
+                                                        <h5><i class="fas fa-clock"></i> Duration:
+                                                            {{ $tour->start_date . ' ' . $tour->end_date }}</h5>
+                                                    </li> --}}
+                                                    <li>
+                                                        <h5><i class="fas fa-clock"></i> Duration:
+                                                            {{ $duration ? $duration->format('%h h %i mins') : 'N/A' }}</h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-users"></i> Age: {{ $tour->age }}</h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-user-friends"></i> Capacity: Max
+                                                            {{ $tour->capacity }}</h5>
+                                                    </li>
+                                                </ul>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <div class="best-spots-box-btn">
+                                                        <a class="btn-b"
+                                                            href="{{ route('tourinner', ['slug' => \Str::slug($tour->title, '-'), 'id' => $tour->id]) }}">ONLINE
+                                                            BOOKING</a>
+                                                    </div>
+                                                    <div class="best-spots-box-price">
+                                                        <h4>${{ $tour->price }}+Tax</h4>
+                                                        <h6>Per Adult</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+
+                                {{-- <li>
+                                    <div class="best-spots-box tour-best-spots-box fill-shadow">
+                                        <div class="best-spots-box-img">
+                                            <div class="best-spots-box-img-content">
+                                                <h6>01 Aug - 10 Aug</h6>
+                                            </div>
+                                            <img src="assets/images/s1.jpg" alt="">
+                                        </div>
+                                        <div class="best-spots-box-content">
+                                            <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                            <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United
+                                                States</span>
+                                            <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
+                                            <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i></div>
+                                            <ul class="best-spots-box-list mb-20">
+                                                <li>
+                                                    <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-users"></i> Age: 10-40</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
+                                                </li>
+                                            </ul>
+                                            <div class="best-spots-box-btn-and-price">
+                                                <div class="best-spots-box-btn">
+                                                    <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                </div>
+                                                <div class="best-spots-box-price">
+                                                    <h4>$550+Tax</h4>
+                                                    <h6>Per adult</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="best-spots-box tour-best-spots-box fill-shadow">
+                                        <div class="best-spots-box-img">
+                                            <div class="best-spots-box-img-content">
+                                                <h6>01 Aug - 10 Aug</h6>
+                                            </div>
+                                            <img src="assets/images/s2.jpg" alt="">
+                                        </div>
+                                        <div class="best-spots-box-content">
+                                            <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                            <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United
+                                                States</span>
+                                            <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
+                                            <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i></div>
+                                            <ul class="best-spots-box-list mb-20">
+                                                <li>
+                                                    <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-users"></i> Age: 10-40</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
+                                                </li>
+                                            </ul>
+                                            <div class="best-spots-box-btn-and-price">
+                                                <div class="best-spots-box-btn">
+                                                    <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                </div>
+                                                <div class="best-spots-box-price">
+                                                    <h4>$550+Tax</h4>
+                                                    <h6>Per adult</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="best-spots-box tour-best-spots-box fill-shadow">
+                                        <div class="best-spots-box-img">
+                                            <div class="best-spots-box-img-content">
+                                                <h6>01 Aug - 10 Aug</h6>
+                                            </div>
+                                            <img src="assets/images/s3.jpg" alt="">
+                                        </div>
+                                        <div class="best-spots-box-content">
+                                            <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                            <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United
+                                                States</span>
+                                            <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
+                                            <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i></div>
+                                            <ul class="best-spots-box-list mb-20">
+                                                <li>
+                                                    <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-users"></i> Age: 10-40</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
+                                                </li>
+                                            </ul>
+                                            <div class="best-spots-box-btn-and-price">
+                                                <div class="best-spots-box-btn">
+                                                    <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                </div>
+                                                <div class="best-spots-box-price">
+                                                    <h4>$550+Tax</h4>
+                                                    <h6>Per adult</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li> --}}
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="best-spots-content mb-20">
+                                <h4 class="sub-hd">RECOMMENDED</h4>
+                            </div>
+                            <ul class="recomded-list mb-5">
+
+                                @foreach ($tourrecommendeds as $tourrecommended)
+                                    <li>
+                                        <a
+                                            href="{{ route('tourinner', ['slug' => \Str::slug($tourrecommended->title, '-'), 'id' => $tourrecommended->id]) }}">
+                                            <div class="recomended-box fill-shadow">
+                                                <div class="best-spots-box-img recomended-spots-box-img">
+                                                    <div class="recomended-spots-box-img-content">
+                                                        <h6>${{ $tourrecommended->price }}+Tax</h6>
+                                                        <p>Per Adult</p>
+                                                    </div>
+                                                    <img src="assets/images/r1.jpg" alt="">
+                                                </div>
+                                                <div class="best-spots-box-content">
+                                                    <h4 class="mb-5">{{ $tourrecommended->title }}</h4>
+                                                    <span class="mb-10"><i
+                                                            class="fas fa-map-marker-alt"></i>{{ $tourrecommended->locations }}</span>
+                                                    <ul class="best-spots-box-list recomended-spots-box-list">
+                                                        <li>
+                                                            <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
+                                                        </li>
+                                                        <li>
+                                                            <h5><i class="fas fa-users"></i> Age:
+                                                                {{ $tourrecommended->age }}</h5>
+                                                        </li>
+                                                        <li>
+                                                            <h5><i class="fas fa-user-friends"></i> Capacity: Max
+                                                                {{ $tourrecommended->capacity }}</h5>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                @endforeach
+                                {{-- <li>
+                                    <a href="tour-detail.php">
+                                        <div class="recomended-box fill-shadow">
+                                            <div class="best-spots-box-img recomended-spots-box-img">
+                                                <div class="recomended-spots-box-img-content">
+                                                    <h6>$550+Tax</h6>
+                                                    <p>Per adult</p>
+                                                </div>
+                                                <img src="assets/images/r2.jpg" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                                <span class="mb-10"><i class="fas fa-map-marker-alt"></i> New York,
+                                                    United States</span>
+                                                <ul class="best-spots-box-list recomended-spots-box-list">
+                                                    <li>
+                                                        <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-users"></i> Age: 10-40</h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> --}}
+                            </ul>
+
+                            <div class="best-spots-content mb-20">
+                                <h4 class="sub-hd">BEST OFFER</h4>
+                            </div>
+                            <ul class="best-offer-list">
+                                <li>
+                                    <a href="tour-detail.php">
+                                        <div class="best-spots-box best-offer-box ">
+                                            <div class="best-spots-box-img best-offer-box-img">
+                                                <div class="best-spots-box-img-content best-offer-box-img-content">
+                                                    <h6>- 20%</h6>
+                                                </div>
+                                                <img src="assets/images/o1.jpg" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                                <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York,
+                                                    United States</span>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <!-- <div class="best-spots-box-btn">
+                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                          </div> -->
+                                                    <div class="best-spots-box-price">
+                                                        <h4>$550+Tax <span>Per adult</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tour-detail.php">
+                                        <div class="best-spots-box best-offer-box">
+                                            <div class="best-spots-box-img best-offer-box-img">
+                                                <div class="best-spots-box-img-content best-offer-box-img-content">
+                                                    <h6>- 20%</h6>
+                                                </div>
+                                                <img src="assets/images/o2.jpg" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                                <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York,
+                                                    United States</span>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <!-- <div class="best-spots-box-btn">
+                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                          </div> -->
+                                                    <div class="best-spots-box-price">
+                                                        <h4>$550+Tax <span>Per adult</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tour-detail.php">
+                                        <div class="best-spots-box best-offer-box">
+                                            <div class="best-spots-box-img best-offer-box-img">
+                                                <div class="best-spots-box-img-content best-offer-box-img-content">
+                                                    <h6>- 20%</h6>
+                                                </div>
+                                                <img src="assets/images/o3.jpg" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                                <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York,
+                                                    United States</span>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <!-- <div class="best-spots-box-btn">
+                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                          </div> -->
+                                                    <div class="best-spots-box-price">
+                                                        <h4>$550+Tax <span>Per adult</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tour-detail.php">
+                                        <div class="best-spots-box best-offer-box">
+                                            <div class="best-spots-box-img best-offer-box-img">
+                                                <div class="best-spots-box-img-content best-offer-box-img-content">
+                                                    <h6>- 20%</h6>
+                                                </div>
+                                                <img src="assets/images/o4.jpg" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
+                                                <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York,
+                                                    United States</span>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <!-- <div class="best-spots-box-btn">
+                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                          </div> -->
+                                                    <div class="best-spots-box-price">
+                                                        <h4>$550+Tax <span>Per adult</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                 </div>
-              </div>
-           </div>
+                </div>
+            </div>
         </div>
-     </section>
+    </section>
 
 @endsection
 

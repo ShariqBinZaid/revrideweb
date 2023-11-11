@@ -1291,6 +1291,7 @@ select {
 
 .category-tabbing-list li {
     padding: 0 5px;
+    height: auto;
 }
 
 .category-tabbing-list li a {
@@ -1407,6 +1408,7 @@ select {
 
 .recomended-spots-box-img img {
     width: 100%;
+    height: auto;
 }
 
 .recomended-spots-box-img-content {
@@ -1592,6 +1594,15 @@ select {
 }
 
 .contact-form-btn input {
+    width: 100%;
+    padding: 15px 15px;
+    background-color: var(--greenish);
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.contact-form-btn button {
     width: 100%;
     padding: 15px 15px;
     background-color: var(--greenish);
@@ -1958,6 +1969,7 @@ select {
 
 .index-slider .slick-track>li {
     padding: 0 10px;
+    height: auto;
 }
 
 .index-slider {
@@ -2358,6 +2370,20 @@ select {
     font-weight: 600;
     justify-content: center;
     letter-spacing: 1px;
+}
+
+.newsletter-form-fields .form-btn button {
+    background-color: #71CCD4;
+    color: var(--white);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 20px;
+    display: flex;
+    height: 100%;
 }
 
 .include-list li {
@@ -4225,7 +4251,16 @@ input[type=checkbox]:checked:disabled+label:before {
         width: 100%;
     }
 
+    .newsletter-form-fields>button {
+        width: 100%;
+    }
+
     .subscribe-form input {
+        padding: 10px 20px;
+        display: inline-block !important;
+    }
+
+    .subscribe-form button {
         padding: 10px 20px;
         display: inline-block !important;
     }

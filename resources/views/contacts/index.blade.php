@@ -79,20 +79,24 @@
                             <h2 class="primary-hd mb-10">SEND YOUR MESSAGE</h2>
                             <h4 class="sub-hd mb-10">DON’T HESITATE TO CONTACT US</h4>
                         </div>
-                        <form action="#" class="contact form">
+
+                        <form class="contact form" action="{{ route('contacts.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="id">
                             <div class="contact-form-fields">
                                 <div class="contact-form-field">
                                     <label for="name">NAME</label>
-                                    <input id="name" type="text" placeholder="Your Name">
+                                    <input id="name" name="name" type="text" placeholder="Your Name">
                                 </div>
                                 <div class="contact-form-field">
                                     <label for="email">EMAIL</label>
-                                    <input id="email" type="email" placeholder="Email Address">
+                                    <input id="email" name="email" type="email" placeholder="Email Address">
                                 </div>
                             </div>
                             <div class="contact-form-field">
                                 <label for="subject">SUBJECT</label>
-                                <div>
+                                <input id="subject" name="subject" type="text" placeholder="Subject">
+                                {{-- <div>
                                     <select id="subject" class="">
                                         <option value="" data-display-text="Do You Want To Discuss About">Do You Want
                                             To Discuss About</option>
@@ -100,14 +104,18 @@
                                         <option value="UK">UK</option>
                                         <option value="CANADA">CANADA</option>
                                     </select>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="contact-form-field">
                                 <label for="message">MESSAGE</label>
-                                <textarea name="" id="message" placeholder="Write Your Message..." cols="30" rows="10"></textarea>
+                                <textarea name="message" id="message" placeholder="Write Your Message..." cols="30" rows="10"></textarea>
                             </div>
-                            <div class="contact-form-btn"><input type="submit" value="Send Your Message"></div>
+                            <div class="contact-form-btn">
+                                {{-- <input type="submit" value="Send Your Message"> --}}
+                                <button type="submit">Send Your Message</button>
+                            </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -131,16 +139,23 @@
                             <h3 class="third-hd white mb-10">SUBSCRIBE TO OUR NEWSLETTER</h3>
                             <h4 class="sub-hd white">SUBSCRIBE & GET UPDATES IN YOUR INBOX</h4>
                         </div>
-                        <form action="javascript:;" class="newsletter-form subscribe-form">
+                        <form action="{{ route('subscribe.form') }}" method="POST" class="newsletter-form subscribe-form">
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+                            @csrf
                             <div class="newsletter-form-fields">
                                 <div class="form-field">
-                                    <input type="text" placeholder="Your Name">
+                                    <input type="text" name="name" placeholder="Your Name">
                                 </div>
                                 <div class="form-field">
-                                    <input type="email" placeholder="Email Address">
+                                    <input type="email" name="email" placeholder="Email Address">
                                 </div>
                                 <div class="form-btn form-field">
-                                    <input type="submit" value="SUBSCRIBE NOW">
+                                    {{-- <input type="submit" value="SUBSCRIBE NOW"> --}}
+                                    <button type="submit">SUBSCRIBE NOW</button>
                                 </div>
                             </div>
                         </form>

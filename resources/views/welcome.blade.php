@@ -86,7 +86,7 @@
                             <li>
                                 <a href="#">
                                     <div class="category-box text-center">
-                                        <img src="{{ asset($category->image) }}" alt="">
+                                        <img src="{{ asset('storage/' . $category->image) }}" alt="">
                                         <h5>{{ $category->title }}</h5>
                                     </div>
                                 </a>
@@ -742,14 +742,17 @@
                     <div class="blog-form-box">
                         <h2 class="primary-hd white mb-20">SUBSCRIBE US</h2>
                         <h4 class="sub-hd white mb-30">SUBSCRIBE US AND GET LATEST UPDATES</h4>
-                        <form action="#" class="subscribe-form">
-                            <input type="text" placeholder="Your Name">
-                            <input type="email" placeholder="Email Address">
+
+                        <form action="{{ route('subscribe.form') }}" method="POST" class="subscribe-form">
+                            @csrf
+                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="email" name="email" placeholder="Email Address">
                             <div class="subscribe-form-btn">
                                 {{-- <input type="submit" value="SUBMIT"> --}}
                                 <button class="subscribe-btn" type="submit">Submit</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>

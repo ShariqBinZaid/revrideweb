@@ -15,6 +15,11 @@ class RentalsController extends Controller
         return view('sports.index');
     }
 
+    public function innner()
+    {
+        return view('sports.inner');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
