@@ -24,10 +24,10 @@ class ToursController extends Controller
         return view('tours.index')->with($data);
     }
 
-    public function inner($id)
+    public function inner($slug, $id)
     {
         $inners = Tours::where('id', $id)->get();
-        return view('tours.inner')->with(['inners' => $inners]);
+        return view('tours.inner')->with(['inners' => $inners[0]]);
     }
 
     /**

@@ -61,8 +61,12 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <ul class="category-tabbing-list m-silder mb-50">
-                            <li class="current" data-targetit="box-1"><a href="#">UTV</a></li>
-                            <li data-targetit="box-2"><a href="#">ATV</a></li>
+
+                            @foreach ($categories as $key => $category)
+                                <li class="current" data-targetit="box-{{ $category->id }}"><a data-id=""
+                                        href="#">{{ $category->title }}</a></li>
+                            @endforeach
+                            {{-- <li data-targetit="box-2"><a href="#">ATV</a></li>
                             <li data-targetit="box-3"><a href="#">JET SKIS</a></li>
                             <li data-targetit="box-4"><a href="#">BOATS</a></li>
                             <li data-targetit="box-5"><a href="#">SURF BOARDS</a></li>
@@ -71,11 +75,12 @@
                             <li data-targetit="box-8"><a href="#">MOTORCYCLES</a></li>
                             <li data-targetit="box-9"><a href="#">RV</a></li>
                             <li data-targetit="box-10"><a href="#">KAYAKS/CANOES</a></li>
-                            <li data-targetit="box-11"><a href="#">SNOWMOBILES</a></li>
+                            <li data-targetit="box-11"><a href="#">SNOWMOBILES</a></li> --}}
                         </ul>
 
                         <div class="box-1 showfirst">
                             <div class="row">
+
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
@@ -88,13 +93,14 @@
                                                     <h3>Yamaha Jet Ski</h3>
                                                 </div>
                                                 <div>
-                                                    <p><span>$30</span> + tax</p>
+                                                    <p><span>$30</span> + Tax</p>
                                                     <span>per hour</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
+
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <a href="sports-detail.php">
                                         <div class="popular-page-activity-box">
@@ -2227,6 +2233,14 @@
             return false;
         }
     });
+
+    $(document).ready(function() {
+        setTimeout(() => {
+            $('.allpost').click()
+        }, 100);
+
+    })
+
 
     $(document).ready(function() {
         create_custom_dropdowns();
