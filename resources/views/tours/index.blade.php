@@ -331,8 +331,8 @@
                                                     United States</span>
                                                 <div class="best-spots-box-btn-and-price">
                                                     <!-- <div class="best-spots-box-btn">
-                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                                                                                                                                                                                                          </div> -->
+                                                                                                                                                                                                                                     <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                                  </div> -->
                                                     <div class="best-spots-box-price">
                                                         <h4>$550+Tax <span>Per adult</span></h4>
                                                     </div>
@@ -356,8 +356,8 @@
                                                     United States</span>
                                                 <div class="best-spots-box-btn-and-price">
                                                     <!-- <div class="best-spots-box-btn">
-                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                                                                                                                                                                                                          </div> -->
+                                                                                                                                                                                                                                     <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                                  </div> -->
                                                     <div class="best-spots-box-price">
                                                         <h4>$550+Tax <span>Per adult</span></h4>
                                                     </div>
@@ -381,8 +381,8 @@
                                                     United States</span>
                                                 <div class="best-spots-box-btn-and-price">
                                                     <!-- <div class="best-spots-box-btn">
-                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                                                                                                                                                                                                          </div> -->
+                                                                                                                                                                                                                                     <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                                  </div> -->
                                                     <div class="best-spots-box-price">
                                                         <h4>$550+Tax <span>Per adult</span></h4>
                                                     </div>
@@ -406,8 +406,8 @@
                                                     United States</span>
                                                 <div class="best-spots-box-btn-and-price">
                                                     <!-- <div class="best-spots-box-btn">
-                                                                                                                                                                                                                             <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                                                                                                                                                                                                          </div> -->
+                                                                                                                                                                                                                                     <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
+                                                                                                                                                                                                                                  </div> -->
                                                     <div class="best-spots-box-price">
                                                         <h4>$550+Tax <span>Per adult</span></h4>
                                                     </div>

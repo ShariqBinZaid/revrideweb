@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categories;
 use App\Models\Rentals;
 use Illuminate\Http\Request;
 
@@ -10,14 +11,24 @@ class RentalsController extends Controller
     /**
      * Display a listing of the resource.
      */
+
     public function index()
     {
-        return view('sports.index');
+        $rentals = Rentals::get();
+        $data['rentals'] = $rentals;
+        $data['categories'] = Categories::get();
+
+        $start = \Carbon\Carbon::parse($rentals->min('start_date'));
+        $end = \Carbon\Carbon::parse($rentals->max('end_date'));
+        $data['duration'] = $start->diff($end);
+
+        return view('sports.index')->with($data);
     }
 
-    public function innner()
+    public function inner($slug, $id)
     {
-        return view('sports.inner');
+        $inners = Rentals::where('id', $id)->get();
+        return view('sports.inner')->with(['inners' => $inners[0]]);
     }
 
     /**

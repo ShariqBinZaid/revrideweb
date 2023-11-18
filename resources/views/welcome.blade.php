@@ -244,24 +244,29 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="popular-activity-box">
-                            <div class="popular-activity-box-img">
-                                <img src="{{ asset('assets/images/p1.png') }}" alt="">
-                            </div>
-                            <div class="popular-activity-box-content">
-                                <div class="popular-activity-box-content-icon"><img
-                                        src="{{ asset('assets/images/i1.png') }}" alt=""></div>
-                                <h6>SKIING</h6>
-                                <hr class="seperator">
-                                <h3>Yamaha Jet Ski</h3>
-                                <p>$30 per hour</p>
-                                <a href="{{ route('sports') }}"><i class="fal fa-arrow-to-right"></i> MORE ABOUT
-                                    SKIING</a>
+
+                    @foreach ($rentals as $rental)
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="popular-activity-box">
+                                <div class="popular-activity-box-img">
+                                    <img src="{{ asset('assets/images/p1.png') }}" alt="">
+                                </div>
+                                <div class="popular-activity-box-content">
+                                    <div class="popular-activity-box-content-icon"><img
+                                            src="{{ asset('assets/images/i2.png') }}" alt="">
+                                    </div>
+                                    <h6>{{ $rental->Category->title }}</h6>
+                                    <hr class="seperator">
+                                    <h3>{{ $rental->title }}</h3>
+                                    <p>${{ $rental->price }} per Hour</p>
+                                    <a href="{{ route('sports') }}"><i class="fal fa-arrow-to-right"></i> MORE ABOUT
+                                        SKIING</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
+                    @endforeach
+
+                    {{-- <div class="col-lg-3 col-md-6 col-12">
                         <div class="popular-activity-box popular-activity-box-mobile">
                             <div class="popular-activity-box-img">
                                 <img src="assets/images/p2.png" alt="">
@@ -308,9 +313,10 @@
                                 <a href="sports-detail.php"><i class="fal fa-arrow-to-right"></i> MORE ABOUT SKIING</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-12">
-                        <div class="popular-activity-btn text-center mt-50"><a href="sports.php" class="btn-b">VIEW MORE
+                        <div class="popular-activity-btn text-center mt-50"><a href="{{ route('sports') }}"
+                                class="btn-b">VIEW MORE
                                 <i class="fal fa-arrow-to-right"></i></a></div>
                     </div>
                 </div>
@@ -385,7 +391,57 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="product-slid">
-                                <li>
+
+                                @foreach ($tours as $tour)
+                                    <li>
+                                        <div class="best-spots-box">
+                                            <div class="best-spots-box-img">
+                                                <div class="best-spots-box-img-content">
+                                                    <h6>{{ Carbon\Carbon::parse($tour->start_date)->format('d M') . ' - ' . Carbon\Carbon::parse($tour->end_date)->format('d M') }}
+                                                    </h6>
+                                                </div>
+                                                <img src="{{ asset('assets/images/spot.jpg') }}" alt="">
+                                            </div>
+                                            <div class="best-spots-box-content">
+                                                <h4 class="mb-5">{{ $tour->title }}</h4>
+                                                <span class="mb-20"><i
+                                                        class="fas fa-map-marker-alt"></i>{{ $tour->locations }}</span>
+                                                <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
+                                                <div class="mb-20"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                <ul class="best-spots-box-list mb-20">
+                                                    <li>
+                                                        <h5><i class="fas fa-clock"></i>
+                                                            Duration:{{ $duration ? $duration->format('%h h %i mins') : 'N/A' }}
+                                                        </h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-users"></i> Age: {{ $tour->age }}</h5>
+                                                    </li>
+                                                    <li>
+                                                        <h5><i class="fas fa-user-friends"></i> Capacity: Max
+                                                            {{ $tour->capacity }}</h5>
+                                                    </li>
+                                                </ul>
+                                                <div class="best-spots-box-btn-and-price">
+                                                    <div class="best-spots-box-btn">
+                                                        <a class="btn-b"
+                                                            href="{{ route('tourinner', ['slug' => \Str::slug($tour->title, '-'), 'id' => $tour->id]) }}"
+                                                            target="_blank">ONLINE BOOKING</a>
+                                                    </div>
+                                                    <div class="best-spots-box-price">
+                                                        <h4>${{ $tour->price }}+Tax</h4>
+                                                        <h6>Per Adult</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+
+
+                                {{-- <li>
                                     <div class="best-spots-box">
                                         <div class="best-spots-box-img">
                                             <div class="best-spots-box-img-content">
@@ -462,51 +518,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="best-spots-box">
-                                        <div class="best-spots-box-img">
-                                            <div class="best-spots-box-img-content">
-                                                <h6>01 Aug - 10 Aug</h6>
-                                            </div>
-                                            <img src="{{ asset('assets/images/spot.jpg') }}" alt="">
-                                        </div>
-                                        <div class="best-spots-box-content">
-                                            <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                            <span class="mb-20"><i class="fas fa-map-marker-alt"></i> New York, United
-                                                States</span>
-                                            <h4 class="mb-5">4.8 <span>[256 REVIEWS]</span></h4>
-                                            <div class="mb-20"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                    class="fas fa-star"></i></div>
-                                            <ul class="best-spots-box-list mb-20">
-                                                <li>
-                                                    <h5><i class="fas fa-clock"></i> Duration: 2 h 30 mins</h5>
-                                                </li>
-                                                <li>
-                                                    <h5><i class="fas fa-users"></i> Age: 10-40</h5>
-                                                </li>
-                                                <li>
-                                                    <h5><i class="fas fa-user-friends"></i> Capacity: Max 50</h5>
-                                                </li>
-                                            </ul>
-                                            <div class="best-spots-box-btn-and-price">
-                                                <div class="best-spots-box-btn">
-                                                    <a class="btn-b" href="tour-detail.php">ONLINE BOOKING</a>
-                                                </div>
-                                                <div class="best-spots-box-price">
-                                                    <h4>$550+Tax</h4>
-                                                    <h6>Per adult</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                         <div class="col-lg-12">
-                            <div class="best-spots-btn mt-50 text-center"><a href="tour.php" class="btn-b">VIEW MORE <i
-                                        class="fal fa-arrow-to-right"></i></a></div>
+                            <div class="best-spots-btn mt-50 text-center"><a href="{{ route('tours') }}" target="_blank"
+                                    class="btn-b">VIEW MORE <i class="fal fa-arrow-to-right"></i></a></div>
                         </div>
                     </div>
                 </div>

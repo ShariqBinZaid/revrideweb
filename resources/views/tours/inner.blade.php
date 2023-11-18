@@ -10,9 +10,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <div class="banner-content text-center">
-                                <h4>Your Dream SPORTS</h4>
+                                <h4>Your Dream Sport's</h4>
                                 <hr class="seperator">
-                                <h1>Our extreme sports</h1>
+                                <h1>{{ $inners->title }}</h1>
                                 {{-- <h1>{{ $inners->title }}</h1> --}}
                             </div>
                         </div>
@@ -29,8 +29,8 @@
                     <div class="sports-detail-box">
                         <div class="detail-content-review-and-setting mb-10">
                             <div class="detail-content best-spots-box-content p-0">
-                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                <span><i class="fas fa-map-marker-alt"></i> New York, United States</span>
+                                <h4 class="mb-5">{{ $inners->title }}</h4>
+                                <span><i class="fas fa-map-marker-alt"></i> {{ $inners->locations }}</span>
                             </div>
                             <div class="detail-review-and-seting best-spots-box-content p-0">
                                 <div class="detail-review">
@@ -47,10 +47,10 @@
                         <ul class="index-slider mb-30">
                             <li>
                                 <div class="sports-detail-img">
-                                    <img src="{{ asset('assets/images/dt1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/' . $inners->Images) }}" alt="">
                                 </div>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <div class="sports-detail-img">
                                     <img src="{{ asset('assets/images/dt1.jpg') }}" alt="">
                                 </div>
@@ -64,21 +64,18 @@
                                 <div class="sports-detail-img">
                                     <img src="{{ asset('assets/images/dt1.jpg') }}" alt="">
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="detail-content mb-20">
                             <h3 class="third-hd mb-20">Description</h3>
-                            <p class="primary-para">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                                has survived not only five centuries, but also the leap into electronic typesetting, </p>
+                            <p class="primary-para">{{ $inners->desc }}</p>
                         </div>
                         <ul class="detail-info-list mb-20">
                             <li>
                                 <div class="detail-info-list-box">
                                     <img src="{{ asset('assets/images/info1.png') }}" alt="">
                                     <h4>Capacity</h4>
-                                    <p>2 Persons</p>
+                                    <p>{{ $inners->capacity }} Persons</p>
                                 </div>
                             </li>
                             <li>
@@ -93,7 +90,7 @@
                                 <div class="detail-info-list-box">
                                     <img src="{{ asset('assets/images/info3.png') }}" alt="">
                                     <h4>Skill Level</h4>
-                                    <p>Advance</p>
+                                    <p>Advanced</p>
                                 </div>
                             </li>
                         </ul>
@@ -179,7 +176,7 @@
                             <li>
                                 <div class="price-filter detail-filter-content">
                                     <h6 class="mb-10">PRICE</h6>
-                                    <h3>$30+Tax / <span>Per hour</span></h3>
+                                    <h3>${{ $inners->price }}+Tax / <span>Per Hour</span></h3>
                                 </div>
                             </li>
                             <!-- <li>
@@ -308,6 +305,9 @@
                                     <h3 class="mb-10">WHAT'S INCLUDED</h3>
                                     <ul class="include-list">
                                         <li>
+                                            <p>{{ $inners->whats_include }}</p>
+                                        </li>
+                                        {{-- <li>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                         </li>
                                         <li>
@@ -315,10 +315,7 @@
                                         </li>
                                         <li>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                                        </li>
-                                        <li>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </li>
@@ -342,7 +339,7 @@
                                                     <h6>TOTAL PACKAGE:</h6>
                                                 </div>
                                                 <div class="detail-filter-content">
-                                                    <h6>$80.00</h6>
+                                                    <h6>${{ $inners->price }}</h6>
                                                 </div>
                                             </div>
                                         </li>

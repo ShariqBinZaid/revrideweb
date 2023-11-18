@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Controllers\AboutsController;
-use App\Http\Controllers\BlogsController;
-use App\Http\Controllers\ContactsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\Vendor\VendorController;
 use App\Http\Controllers\Vendor\VendorRentalsController;
 use App\Http\Controllers\RentalsController;
 use App\Http\Controllers\ToursController;
+use App\Http\Controllers\AboutsController;
+use App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::controller(AboutsController::class)->group(function () {
 Route::resource('sports', RentalsController::class);
 Route::controller(RentalsController::class)->group(function () {
     Route::get('sports', 'index')->name('sports');
+    Route::get('sports-details/{slug}/{id}', 'inner')->name('sportinner');
 });
 
 // ************************ Tours  ************************ //
@@ -58,12 +60,9 @@ Route::controller(ContactsController::class)->group(function () {
 });
 
 
-
-
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['admin', 'auth']], function () {
 });

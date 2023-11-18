@@ -11,7 +11,7 @@
                             <div class="banner-content text-center">
                                 <h4>Your Dream SPORTS</h4>
                                 <hr class="seperator">
-                                <h1>Our extreme sports</h1>
+                                <h1>{{ $inners->title }}</h1>
                             </div>
                         </div>
                     </div>
@@ -27,8 +27,8 @@
                     <div class="sports-detail-box">
                         <div class="detail-content-review-and-setting mb-10">
                             <div class="detail-content best-spots-box-content p-0">
-                                <h4 class="mb-5">Scuba Diving In NewYork</h4>
-                                <span><i class="fas fa-map-marker-alt"></i> New York, United States</span>
+                                <h4 class="mb-5">{{ $inners->title }}</h4>
+                                <span><i class="fas fa-map-marker-alt"></i> {{ $inners->locations }}</span>
                             </div>
                             <div class="detail-review-and-seting best-spots-box-content p-0">
                                 <div class="detail-review">
@@ -65,17 +65,14 @@
                         </ul>
                         <div class="detail-content mb-20">
                             <h3 class="third-hd mb-20">Description</h3>
-                            <p class="primary-para">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                                has survived not only five centuries, but also the leap into electronic typesetting, </p>
+                            <p class="primary-para">{{ $inners->desc }}</p>
                         </div>
                         <ul class="detail-info-list mb-20">
                             <li>
                                 <div class="detail-info-list-box">
                                     <img src="assets/images/info1.png" alt="">
                                     <h4>Capacity</h4>
-                                    <p>2 Persons</p>
+                                    <p>{{ $inners->capacity }} Persons</p>
                                 </div>
                             </li>
                             <li>
@@ -83,14 +80,14 @@
                                     <img src="assets/images/info2.png" alt="">
                                     <h4>Cancellation</h4>
                                     <p>100% Refund</p>
-                                    <p>2 days prior</p>
+                                    <p>{{ $inners->cancel_days }} days prior</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="detail-info-list-box">
                                     <img src="assets/images/info3.png" alt="">
                                     <h4>Skill Level</h4>
-                                    <p>Advance</p>
+                                    <p>{{ $inners->skills }}</p>
                                 </div>
                             </li>
                         </ul>
@@ -108,9 +105,10 @@
                                 </div>
                                 <div class="review-list-with-percent">
                                     <div class="review-list review-points">
-                                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i></div>
+                                        <div><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                            <div class="fas fa-star"></i>
+                                        </div>
                                         <div class="review-percent-box">
                                             <div></div>
                                         </div>
@@ -153,10 +151,10 @@
                                         </div>
                                     </div>
                                     <div class="review-list review-points">
-                                        <div><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i
-                                                    class="fas fa-star"></i></span><span><i
-                                                    class="fas fa-star"></i></span><span><i
-                                                    class="fas fa-star"></i></span></div>
+                                        <div><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span>
+                                                <i class="fas fa-star"></i></span><span>
+                                                <i class="fas fa-star"></i></span><span>
+                                                <i class="fas fa-star"></i></span></div>
                                         <div class="review-percent-box">
                                             <div class="w-0"></div>
                                         </div>
