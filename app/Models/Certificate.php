@@ -5,9 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categories extends Model
+class Certificate extends Model
 {
     use HasFactory;
-    protected $guarded = [];
     
+    protected $table = 'certificates';
+
+    protected $fillable = [
+        'user_id',
+        'image',
+    ];
+
+
 }

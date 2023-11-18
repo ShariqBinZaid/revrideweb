@@ -66,41 +66,70 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="account-info">
-                                @auth
-                                    @if (auth::user()->user_type == 'user')
-                                        <div class="user-profile header-user-profile">
-                                            <div class="user-profile-img">
-                                                <button class="user-btn"><img src="{{ asset('assets/images/t1.webp') }}"
-                                                        alt=""></button>
-                                            </div>
-                                            <div class="user-profile-content">
-                                                <button class="user-btn">{{ auth::user()->first_name }}
-                                                    {{ auth::user()->last_name }} <i
-                                                        class="fas fa-angle-down"></i></button>
-                                            </div>
-                                            <ul class="user-profile-list">
-                                                <li><a href="profile.php">Profile</a></li>
-                                                <li><a href="chat.php">Messages</a></li>
-                                                <li><a href="my-bookings.php">Bookings</a></li>
-                                                <li><a href="{{ route('logout') }}"
-                                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
-                                                </li>
-                                            </ul>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                                class="d-none">
-                                                @csrf
-                                            </form>
-                                        </div>
-                                    @else
-                                    @endif
-                                @else
+                                @guest
+                                    @if (Route::has('login'))
                                     <div>
                                         <a href="{{ route('login') }}"><i class="fas fa-lock"></i> Login</a>
                                     </div>
+                                    @endif
+                                    @if (Route::has('register'))
                                     <div>
                                         <a href="{{ route('register') }}"><i class="fas fa-user"></i> Signup</a>
                                     </div>
-                                @endauth
+                                    @endif
+                                @else
+                                    @if ( Auth::user()->user_type == 'user')
+                                    <div class="user-profile header-user-profile">
+                                        <div class="user-profile-img">
+                                            <button class="user-btn"><img src="{{ asset('assets/images/t1.webp') }}"
+                                                    alt=""></button>
+                                        </div>
+                                        <div class="user-profile-content">
+                                            <button class="user-btn">{{ Auth::user()->first_name }}
+                                                {{ Auth::user()->last_name }} <i
+                                                    class="fas fa-angle-down"></i></button>
+                                        </div>
+                                        <ul class="user-profile-list">
+                                            <li><a href="profile.php">Profile</a></li>
+                                            <li><a href="chat.php">Messages</a></li>
+                                            <li><a href="my-bookings.php">Bookings</a></li>
+                                            <li><a href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                                            </li>
+                                        </ul>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                    @else
+                                    <div class="user-profile header-user-profile">
+                                        <div class="user-profile-img">
+                                            <button class="user-btn">
+                                                <img src="{{ Auth::user()->display_picture == null ? asset('assets/images/dummy.jpg') : Auth::user()->display_picture }}" alt="{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}">
+                                            </button>
+                                        </div>
+                                        <div class="user-profile-content">
+                                            <button class="user-btn">{{ Auth::user()->first_name }}
+                                                {{ Auth::user()->last_name }} <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </div>
+                                        <ul class="user-profile-list">
+                                            <li><a href="{{ route('vendor.profile') }}">Profile</a></li>
+                                            <li><a href="chat.php">Messages</a></li>
+                                            <li><a href="my-bookings.php">Bookings</a></li>
+                                            <li><a href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                                            </li>
+                                        </ul>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                    @endif
+                                @endguest
+
                             </div>
                         </div>
                     </div>

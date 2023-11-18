@@ -18,8 +18,22 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'user_type',
+        'display_picture',
+        'user_name',
+        'first_name',
+        'last_name',
         'email',
+        'gender',
+        'phone',
+        'dob',
+        'otp',
+        'lati',
+        'longi',
+        'license_number',
+        'license_file',
+        'user_type',
+        'user_type',
         'password',
     ];
 
@@ -42,4 +56,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function get_certificates(){
+        return $this->hasMany(Certificate::class,'user_id');
+    }
+
+    public function get_categories(){
+        return $this->hasMany(UserCategories::class,'user_id');
+    }
+
 }

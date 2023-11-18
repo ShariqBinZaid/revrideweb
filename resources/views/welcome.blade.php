@@ -86,7 +86,7 @@
                             <li>
                                 <a href="#">
                                     <div class="category-box text-center">
-                                        <img src="{{ asset('storage/' . $category->image) }}" alt="">
+                                        <img src="{{ env('API_URL') }}{{ ('storage/' . $category->image) }}" alt="">
                                         <h5>{{ $category->title }}</h5>
                                     </div>
                                 </a>

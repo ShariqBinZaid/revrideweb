@@ -43,7 +43,7 @@ class LoginController extends Controller
         if (\Auth::user()->user_type == 'user') {
             return route('welcome');
         } else if (\Auth::user()->user_type == 'vendor') {
-            return route('vendor.home');
+            return route('welcome');
         }
     }
 }

@@ -2523,9 +2523,11 @@ select {
 }
 
 .sign-field input {
-    padding: 10px 20px;
+    padding: 9px 15px;
     color: var(--black);
     border-radius: 0;
+    font-size: 15px;
+    height: auto;
 }
 
 .sign {
@@ -2535,6 +2537,9 @@ select {
     flex-direction: column;
     height: 100%;
     padding: 0 50px;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+    margin: 0 auto;
 }
 
 .sign-form {
@@ -2547,8 +2552,8 @@ select {
 
 .sign-field button {
     position: absolute;
-    bottom: 4px;
-    right: 5px;
+    bottom: 6px;
+    right: 25px;
     padding: 5px;
     color: #DDDEE2;
 }
@@ -2648,8 +2653,8 @@ select {
 }
 
 .register-box {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     background-color: #E4F2F3;
     display: flex;
@@ -2820,7 +2825,6 @@ select {
     transform: translateY(-50%);
     color: #ACADB7;
     font-size: 25px;
-    font-weight: 300;
 }
 
 .map-icon i {
@@ -3585,7 +3589,7 @@ select {
 
 .avatar-upload .avatar-edit input+label:after {
     content: "\f030";
-    font-family: 'Font Awesome 5';
+    font-family: 'Font Awesome 5 Free';
     color: var(--greenish);
     position: absolute;
     top: 50%;
@@ -3841,6 +3845,7 @@ input[type=checkbox]:checked:disabled+label:before {
     display: inline-block !important;
     transition: all 0.5s !important;
     font-weight: 500 !important;
+    border-radius: 0;
 }
 
 .btn-c i {
@@ -4018,7 +4023,7 @@ input[type=checkbox]:checked:disabled+label:before {
 
 @media (max-height: 768px) {
     .sign-logo img {
-        width: 50%;
+        /* width: 50%; */
     }
 
     .sign-logo {
@@ -4035,11 +4040,6 @@ input[type=checkbox]:checked:disabled+label:before {
 
     .sign-field label {
         font-size: 14px;
-    }
-
-    .sign-field input {
-        padding: 5px 10px;
-        font-size: 14PX;
     }
 
     .mb-20 {
@@ -5111,4 +5111,407 @@ input[type=checkbox]:checked:disabled+label:before {
 .user-profile-list li a {
     display: block;
     padding: 10px 15px;
+}
+.sign .nav-link {
+    border: 1px solid var(--greenish);
+    color: black;
+    border-radius: 0px;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.sign  ul#myTab {
+    border: 0;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.sign .nav-link.active {
+    background-color: var(--greenish);
+    color: white;
+}
+.sign .dropdown.form-control {
+    display: none;
+}
+
+.sign select {
+    border-radius: 0;
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid #ACADB7;
+    color: #ACADB7;
+    font-weight: 300;
+    padding: 9px 15px;
+    height: auto;
+    font-size: 15px;
+}
+.sign-logo {
+    text-align: center;
+}
+.vendor_form {
+}
+.register-box i {
+    color: var(--greenish);
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+.active .register-box i {
+    color: white;
+}
+.regitration-form-box .eye {
+    top: 28px;
+}
+.category-list ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.category-list ul li {
+    flex: 0 0 24%;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.category-list ul li img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.category-list ul li .form-check label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-list ul li .form-check {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+ul.certificate-wrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+ul.certificate-wrapper li {
+    flex: 0 0 24%;
+    position: relative;
+}
+ul.certificate-wrapper li a {
+    position: relative;
+    display: block;
+}
+ul.certificate-wrapper li .delete-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    font-size: 25px;
+    color: #f14858;
+    transition: all 0.4s ease;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50px;
+}
+ul.certificate-wrapper li .delete-icon:hover {
+    transform: scale(1.1);
+}
+ul.registration-list {
+    position: relative;
+}
+
+
+ul.registration-list .loader-wrappper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -40px;
+    display: none;
+}
+
+ul.registration-list .loader-wrappper img {
+    width: 40px;
+    background-color: white;
+}
+ul.registration-list .loader-wrappper.show {
+    display: block;
+}
+ul.certificate-wrapper li a img {
+    height: 200px;
+    object-fit: cover;
+}
+.register-btn button {
+    margin-left: auto;
+    padding: 10px 40px !important;
+}
+
+.sign-btn.mb-20.register-btn {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.payment-tabing-box i {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.payment-tabing-list li.current i {
+    color: white;
+}
+.large-card {
+    font-size: 70px;
+    color: var(--greenish);
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--greenish);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 5px;
+    border-radius: 50%;
+}
+ul.sidebar li a {
+    display: block;
+    border: 1px solid var(--greenish);
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--greenish);
+}
+
+ul.sidebar li a i {
+    margin-right: 6px;
+}
+
+ul.sidebar li {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ul.sidebar li a:hover, ul.sidebar li a.active {
+    background-color: var(--greenish);
+    color: white;
+}
+section.dashboard-wrapper {
+    padding: 50px 0px;
+}
+.dashboard-content-wrapper {
+    padding: 15px 0px;
+}
+
+.dashboard-content-wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.total_earn p {
+    color: var(--greenish);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.total_earn span {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 2px;
+}
+.state-box {
+    background-color: var(--greenish);
+    color: white;
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 20px 0;
+}
+
+.state-box span {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.state-box p {
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+}
+.dashboard-form label {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.dashboard-form input {
+    height: 44px;
+    border-radius: 0;
+}
+
+.dashboard-form .dropify-wrapper .dropify-message p {
+    font-size: 18px;
+}
+
+.dashboard-form .form-group {
+    margin-bottom: 20px;
+}
+
+.dashboard-form .form-group select {
+    height: 44px;
+    border-radius: 0;
+}
+.dashboard-content-wrapper h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0px 7px;
+    border-top: 2px solid #e5e5e5;
+    padding-top: 22px;
+}
+.btn-remove {
+    border-radius: 0px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    height: 45px;
+}
+.repeater-heading {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.repeater-wrapper {
+    position: relative;
+}
+
+.repeater-heading button {
+    border-radius: 0px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0 40px;
+}
+.btn-green-update {
+    background-color: var(--greenish);
+    color: white;
+    border-radius: 0px;
+    height: 50px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.upload__box {
+    padding: 0;
+}
+.upload__inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.upload__btn {
+    display: inline-block;
+    color: #a1a1a1;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload__btn:hover {
+    background-color: unset;
+    color: #4045ba;
+    transition: all 0.3s ease;
+}
+.upload__btn-box {
+    margin-bottom: 10px;
+}
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.upload__img-box {
+    width: 200px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+.upload__img-close, .upload__img-close-old {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+.upload__img-close:after, .upload__img-close-old:after {
+    content: "✖";
+    font-size: 14px;
+    color: white;
+}
+
+.img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+}
+.dashboard-form textarea {
+    border-radius: 0;
+}
+.dashboard-content-wrapper table {
+    margin-top: 20px;
+}
+.image-pro img {
+    width: 60px;
+    border-radius: 50px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.image-pro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-pro p {
+    font-size: 15px;
+    margin: 0;
+}
+.dashboard-content-wrapper table td {
+    vertical-align: middle;
 }

@@ -6,6 +6,8 @@ use App\Http\Controllers\ContactsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\Vendor\VendorController;
+use App\Http\Controllers\Vendor\VendorRentalsController;
 use App\Http\Controllers\RentalsController;
 use App\Http\Controllers\ToursController;
 
@@ -64,4 +66,16 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['admin', 'auth']], function () {
+});
+
+
+Route::group(['prefix' => 'vendor', 'middleware' => ['is_vendor', 'auth']], function(){
+    Route::get('/profile', [VendorController::class, 'profile'])->name('vendor.profile');
+    Route::post('/upload/certificate', [VendorController::class, 'uploadCertificate'])->name('vendor.upload.certificate');
+    Route::post('/certificate/delete', [VendorController::class, 'uploadCertificateDelete'])->name('vendor.certificate.delete');
+    Route::post('/profile/update', [VendorController::class, 'profileUpdate'])->name('vendor.profile.update');
+    Route::post('/categories', [VendorController::class, 'businessCategories'])->name('vendor.business.categories');
+    Route::get('/dashboard', [VendorController::class, 'vendorDashboard'])->name('vendor.dashboard');
+    Route::resource('rental', VendorRentalsController::class, ['names' => 'vendor.rental']);
+    Route::post('vendor/rental/delete/images', [VendorRentalsController::class, 'vendorFilesDelete'])->name('vendor.rental.delete.images');
 });
