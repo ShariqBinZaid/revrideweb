@@ -16,7 +16,7 @@ class IsVendor
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if ((Auth::user()) &&  (Auth::user()->user_type == 'vendor')) {
+        if ((Auth::user()) && (Auth::user()->user_type == 'vendor')) {
             return $next($request);
         }
         return redirect()->back();
