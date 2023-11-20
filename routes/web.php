@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FrontController;
-use App\Http\Controllers\Vendor\VendorController;
-use App\Http\Controllers\Vendor\VendorRentalsController;
+use App\Http\Controllers\Vendors\VendorController;
+use App\Http\Controllers\Vendors\VendorRentalsController;
 use App\Http\Controllers\RentalsController;
 use App\Http\Controllers\ToursController;
 use App\Http\Controllers\AboutsController;
@@ -68,7 +68,7 @@ Route::group(['middleware' => ['admin', 'auth']], function () {
 });
 
 
-Route::group(['prefix' => 'vendor', 'middleware' => ['auth']], function(){
+Route::group(['prefix' => 'vendor', 'middleware' => ['is_vendor', 'auth']], function(){
     Route::get('/profile', [VendorController::class, 'profile'])->name('vendor.profile');
     Route::post('/upload/certificate', [VendorController::class, 'uploadCertificate'])->name('vendor.upload.certificate');
     Route::post('/certificate/delete', [VendorController::class, 'uploadCertificateDelete'])->name('vendor.certificate.delete');
