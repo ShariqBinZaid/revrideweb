@@ -20,7 +20,7 @@ class VendorRentalsController extends Controller
     public function index()
     {
         $data = Rentals::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->get();
-        return view('vendor.rental.index', compact('data'));
+        return view('vendors.rental.index', compact('data'));
     }
 
     /**
@@ -29,7 +29,7 @@ class VendorRentalsController extends Controller
     public function create()
     {
         $cat = Auth::user()->get_categories;
-        return view('vendor.rental.create', compact('cat'));
+        return view('vendors.rental.create', compact('cat'));
     }
 
     /**
@@ -107,10 +107,10 @@ class VendorRentalsController extends Controller
     {
         $data = Rentals::where('id', $id)->where('user_id', Auth::user()->id)->first();
         if($data == null){
-            return redirect()->route('vendor.rental.index');
+            return redirect()->route('vendors.rental.index');
         }
         $cat = Auth::user()->get_categories;
-        return view('vendor.rental.edit', compact('data', 'cat'));
+        return view('vendors.rental.edit', compact('data', 'cat'));
     }
 
     /**

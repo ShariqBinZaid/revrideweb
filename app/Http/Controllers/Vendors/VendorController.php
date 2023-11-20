@@ -29,7 +29,7 @@ class VendorController extends Controller
 
     public function profile(){
         $categories = DB::table('categories')->get();
-        return view('vendor.profile', compact('categories'));
+        return view('vendors.profile', compact('categories'));
     }
 
     public function uploadCertificate(Request $request){
@@ -88,6 +88,6 @@ class VendorController extends Controller
     }
 
     public function vendorDashboard(){
-        return view('vendor.dashboard');
+        return view('vendors.dashboard');
     }
 }
