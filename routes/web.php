@@ -69,6 +69,7 @@ Route::group(['middleware' => ['admin', 'auth']], function () {
 
 
 Route::group(['prefix' => 'vendor', 'middleware' => ['is_vendor', 'auth']], function(){
+    dd("worknig");
     Route::get('/profile', [VendorController::class, 'profile'])->name('vendor.profile');
     Route::post('/upload/certificate', [VendorController::class, 'uploadCertificate'])->name('vendor.upload.certificate');
     Route::post('/certificate/delete', [VendorController::class, 'uploadCertificateDelete'])->name('vendor.certificate.delete');
