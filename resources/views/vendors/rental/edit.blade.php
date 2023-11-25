@@ -187,6 +187,106 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-md-12">
+                                        <h2>Availability</h2>
+                                    </div>
+                                    <div class="form-group col-md-12 repeater-wrapper">
+                                        @foreach($data->availability as $key => $availability)
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="">Day</label>
+                                                    <select name="old_day" id="old_day" class="form-control">
+                                                        <option value="">Select Day</option>
+                                                        <option value="Mon" {{ $availability->day == 'Mon' ? 'selected' : '' }}>Monday</option>
+                                                        <option value="Tue" {{ $availability->day == 'Tue' ? 'selected' : '' }}>Tuesday</option>
+                                                        <option value="Wed" {{ $availability->day == 'Wed' ? 'selected' : '' }}>Wednesday</option>
+                                                        <option value="Thu" {{ $availability->day == 'Thu' ? 'selected' : '' }}>Thursday</option>
+                                                        <option value="Fri" {{ $availability->day == 'Fri' ? 'selected' : '' }}>Friday</option>
+                                                        <option value="Sat" {{ $availability->day == 'Sat' ? 'selected' : '' }}>Saturday</option>
+                                                        <option value="Sun" {{ $availability->day == 'Sun' ? 'selected' : '' }}>Sunday</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="from">From</label>
+                                                    <select name="from" id="from" class="form-control" data-name="[from]">
+                                                        @for($i = 0; $i < 24; $i++)
+                                                        @php
+                                                        $time = ($i < 10 ? '0' : '').$i.':00:00';
+                                                        @endphp
+                                                        <option value="{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00" {{ $time }} {{ ($availability->from == $time ) ? 'selected' : '' }}>{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00</option>
+                                                        @endfor
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="to">To</label>
+                                                    <select name="to" id="to" class="form-control" data-name="[to]">
+                                                        @for($i = 0; $i < 24; $i++)
+                                                        @php
+                                                        $time = ($i < 10 ? '0' : '').$i.':00:00';
+                                                        @endphp
+                                                        <option value="{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00" {{ $time }} {{ ($availability->to == $time ) ? 'selected' : '' }}>{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00</option>
+                                                        @endfor
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button id="remove-btn" class="btn btn-danger btn-remove" onclick="$(this).parents('.items').remove()">Remove</button>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                        <div id="repeater-availability">
+                                            <div class="repeater-heading">
+                                                <button class="btn btn-primary repeater-add-btn" type="button">Add Availability</button>
+                                            </div>
+                                            <div class="items" data-group="availability">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="">Day</label>
+                                                            <select name="day" id="day" class="form-control" data-name="[day]">
+                                                                <option value="">Select Day</option>
+                                                                <option value="Mon">Monday</option>
+                                                                <option value="Tue">Tuesday</option>
+                                                                <option value="Wed">Wednesday</option>
+                                                                <option value="Thu">Thursday</option>
+                                                                <option value="Fri">Friday</option>
+                                                                <option value="Sat">Saturday</option>
+                                                                <option value="Sun">Sunday</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="from">From</label>
+                                                            <select name="from" id="from" class="form-control" data-name="[from]">
+                                                                @for($i = 0; $i < 24; $i++)
+                                                                <option value="{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00">{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00</option>
+                                                                @endfor
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label for="to">To</label>
+                                                            <select name="to" id="to" class="form-control" data-name="[to]">
+                                                                @for($i = 0; $i < 24; $i++)
+                                                                <option value="{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00">{{ $i < 10 ? '0' : '' }}{{ $i }}:00:00</option>
+                                                                @endfor
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button id="remove-btn" class="btn btn-danger btn-remove" onclick="$(this).parents('.items').remove()">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12">
                                         <button class="btn btn-green-update">Update Rental</button>
                                     </div>
                                 </form>
@@ -213,6 +313,7 @@
 
             $('.dropify').dropify();
             $("#repeater").createRepeater();
+            $("#repeater-availability").createRepeater();
         })
 
         function deleteImage(id, a){

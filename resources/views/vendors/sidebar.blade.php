@@ -6,7 +6,7 @@
         <a href="{{ route('vendor.rental.index') }}" class="{{ request()->routeIs('vendor.rental.*') ? 'active' : '' }}"><i class="fa-solid fa-money-bill"></i> Rental</a>
     </li>
     <li>
-        <a href=""><i class="fa-solid fa-plane-circle-check"></i> Tours</a>
+        <a href="{{ route('vendor.tour.index') }}" class="{{ request()->routeIs('vendor.tour.*') ? 'active' : '' }}"><i class="fa-solid fa-plane-circle-check"></i> Tours</a>
     </li>
     <li>
         <a href=""><i class="fa-solid fa-calendar-days"></i> Reservations</a>

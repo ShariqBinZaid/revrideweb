@@ -88,6 +88,15 @@ class VendorRentalsController extends Controller
             }
         }
 
+        $availability = $request->availability;
+        foreach($availability as $key => $value){
+            if($value['day'] != null){
+                DB::table('rental_availability')->insert(
+                    ['rental_id' => $data->id, 'day' => $value['day'], 'from' => $value['from'], 'to' => $value['to']]
+                );
+            }
+        }
+
         return redirect()->back()->with('success', 'Rental Created Successfully');
 
     }
@@ -165,6 +174,15 @@ class VendorRentalsController extends Controller
             if($value['name'] != null){
                 DB::table('rental_addons')->insert(
                     ['rental_id' => $data->id, 'name' => $value['name'], 'price' => $value['price']]
+                );
+            }
+        }
+
+        $availability = $request->availability;
+        foreach($availability as $key => $value){
+            if($value['day'] != null){
+                DB::table('rental_availability')->insert(
+                    ['rental_id' => $data->id, 'day' => $value['day'], 'from' => $value['from'], 'to' => $value['to']]
                 );
             }
         }

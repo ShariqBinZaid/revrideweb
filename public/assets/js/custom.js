@@ -196,26 +196,71 @@ $(document).ready(function () {
         console.log(code)
     }
 
-    $(document).ready(function () {
-        const minus = $('.quantity__minus');
-        const plus = $('.quantity__plus');
-        const input = $('.quantity__input');
-        minus.click(function (e) {
-            e.preventDefault();
-            var value = input.val();
-            if (value > 1) {
-                value--;
-            }
-            input.val(value);
-        });
+    $('.quantity__minus').click(function(){
+        var name = $(this).parent().data('name');
+        var input = $(this).next();
+        var value = input.val();
+        if (value > 0) {
+            value--;
+        }
+        input.val(value);
+        total_person(name, this);
+    })
 
-        plus.click(function (e) {
-            e.preventDefault();
-            var value = input.val();
-            value++;
-            input.val(value);
-        })
-    });
+    $('.quantity__plus').click(function(){
+        var name = $(this).parent().data('name');
+        var input = $(this).prev();
+        var value = input.val();
+        value++;
+        input.val(value);
+        total_person(name, this);
+    })
+
+    function total_person(name, a){
+        if(name == 'group'){
+            var total_person = 0;
+            $('.person-qty').each(function(){
+                total_person += parseInt($(this).val());
+            })
+            $('#form-qty').val(total_person);
+            $('.person-total').text(total_person);
+            $('#title_total').text('x ' + total_person);
+            total_price = product_price * total_person;
+            showPrice();
+        }else if(name == 'addons'){
+            $price = $(a).parent().data('price');
+            addon_price = parseFloat($price) * parseInt($(a).parent().find('.quantity__input').val());
+            showPrice();
+        }
+    }
+
+    function showPrice(){
+        $('#total_price').text((total_price + addon_price + insurance_amount).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));
+        $('#form-total-price').val((total_price + addon_price + insurance_amount).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'))
+    }
+
+
+
+    // $(document).ready(function () {
+    //     const minus = $('.quantity__minus');
+    //     const plus = $('.quantity__plus');
+    //     const input = $('.quantity__input');
+    //     minus.click(function (e) {
+    //         e.preventDefault();
+    //         var value = input.val();
+    //         if (value > 1) {
+    //             value--;
+    //         }
+    //         input.val(value);
+    //     });
+
+    //     plus.click(function (e) {
+    //         e.preventDefault();
+    //         var value = input.val();
+    //         value++;
+    //         input.val(value);
+    //     })
+    // });
 
     $('.index-slider').slick({
         dots: true,

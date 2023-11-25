@@ -6,7 +6,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\Vendors\VendorController;
+use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Vendors\VendorRentalsController;
+use App\Http\Controllers\Vendors\VendorToursController;
 use App\Http\Controllers\RentalsController;
 use App\Http\Controllers\ToursController;
 use App\Http\Controllers\AboutsController;
@@ -37,6 +39,7 @@ Route::resource('sports', RentalsController::class);
 Route::controller(RentalsController::class)->group(function () {
     Route::get('sports', 'index')->name('sports');
     Route::get('sports-details/{slug}/{id}', 'inner')->name('sportinner');
+    Route::get('sport/{slug}/{id}', 'sportByCategory')->name('sport.by.category');
 });
 
 // ************************ Tours  ************************ //
@@ -59,6 +62,8 @@ Route::controller(ContactsController::class)->group(function () {
     Route::post('subscribe', 'subscribe')->name('subscribe.form');
 });
 
+Route::post('check.availability', [RentalsController::class, 'checkAvailability'])->name('check.availability');
+
 
 Auth::routes();
 
@@ -77,4 +82,16 @@ Route::group(['prefix' => 'vendor', 'middleware' => ['is_vendor', 'auth']], func
     Route::get('/dashboard', [VendorController::class, 'vendorDashboard'])->name('vendor.dashboard');
     Route::resource('rental', VendorRentalsController::class, ['names' => 'vendor.rental']);
     Route::post('vendor/rental/delete/images', [VendorRentalsController::class, 'vendorFilesDelete'])->name('vendor.rental.delete.images');
+    Route::resource('tour', VendorToursController::class, ['names' => 'vendor.tour']);
+});
+
+
+Route::group(['middleware' => ['is_user', 'auth']], function(){
+    route::get('/account', [UserController::class, 'dashboard'])->name('user.dashboard');
+    route::get('/profile', [UserController::class, 'profile'])->name('user.profile');
+    route::post('/profile', [UserController::class, 'profileUpdate'])->name('user.profile.update');
+    route::post('booking', [UserController::class, 'booking'])->name('user.booking');
+    route::get('checkout', [UserController::class, 'checkout'])->name('user.checkout');
+    route::post('order', [UserController::class, 'order'])->name('user.order');
+    route::get('booking', [UserController::class, 'getBooking'])->name('user.booking');
 });

@@ -43,30 +43,91 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <form action="javascript:;" class="sign-form">
-                            <div class="contact-form-field sign-field mb-20">
-                               <label class="mb-10" for="signusername">Username</label>
-                               <input type="text" id="signusername" placeholder="sarah.kevin">
+                        <form method="POST" action="{{ route('register') }}" class="vendor_form row">
+                            @csrf
+                            <input type="hidden" name="user_type" value="user">
+                            <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="gender">Gender</label>
+                                <select name="gender" id="gender" required class="form-control">
+                                    <option value="">Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                @error('gender')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
-                            <div class="contact-form-field sign-field mb-20">
-                               <label class="mb-10" for="signemial">Email</label>
-                               <input type="text" id="signemial" placeholder="sarah.kevin@example.com">
+                            <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="	dob">Date Of Birth</label>
+                                <input id="	dob" type="date" class="form-control @error('dob') is-invalid @enderror" name="dob" value="{{ old('dob') }}" required autocomplete="dob" autofocus>
+                                @error('dob')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
-                            <div class="contact-form-field sign-field mb-20">
-                               <label class="mb-10" for="password">Password</label>
-                               <input type="password" id="password" placeholder="**********">
-                               <button><i class="fas fa-eye-slash" id="eye"></i></button>
+                            <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="first_name">First Name</label>
+                                <input id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
+                                @error('first_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
-                            <div class="remember-and-forgot mb-10">
-                               <div class="mb-10">
-                                  <input type="checkbox" id="remember" value="Remember Me">
-                                  <label for="remember">agree to <a href="#">privacy policy & terms</a></label>
-                               </div>
-                               <div class="mb-10">
-                                  <a href="forget.php">Forgot Password?</a>
-                               </div>
+                            <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="last_name">Last Name</label>
+                                <input id="last_name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
+                                @error('last_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
-                            <div class="sign-btn mb-20"><a class="btn-c" href="register.php">Sign Up</a></div>
+                            <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="email">Email Address</label>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                 @error('email')
+                                 <span class="invalid-feedback" role="alert">
+                                     <strong>{{ $message }}</strong>
+                                 </span>
+                                 @enderror
+                             </div>
+                             <div class="contact-form-field sign-field mb-20 col-md-6">
+                                 <label class="mb-10" for="phone">Mobile Number</label>
+                                 <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+                                 @error('phone')
+                                 <span class="invalid-feedback" role="alert">
+                                     <strong>{{ $message }}</strong>
+                                 </span>
+                                 @enderror
+                             </div>
+                             <div class="contact-form-field sign-field mb-20 col-md-6">
+                                <label class="mb-10" for="password">Password</label>
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <button type="button" class="eye"><i class="fas fa-eye-slash" id="eye"></i></button>
+                                 @error('password')
+                                     <span class="invalid-feedback" role="alert">
+                                         <strong>{{ $message }}</strong>
+                                     </span>
+                                 @enderror
+                             </div>
+                             <div class="contact-form-field sign-field mb-20 col-md-6">
+                                 <label class="mb-10" for="password-confirm">Confirm Password</label>
+                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                 <button type="button" class="eye"><i class="fas fa-eye-slash" id="eye"></i></button>
+                              </div>
+                             <div class="remember-and-forgot mb-10">
+                                <div class="mb-10">
+                                   <input type="checkbox" id="remember" value="Remember Me">
+                                   <label for="remember">I agree to <a href="#">privacy policy & terms</a></label>
+                                </div>
+                             </div>
+                             <div class="sign-btn mb-20 register-btn">
+                                <button class="btn-c btn btn-block">Sign Up</button>
+                            </div>
                          </form>
                          <div class="sign-content text-center">
                             <p class="primary-para mb-10">Already have an account? <a href="{{ route('login') }}">Sign in instead</a></p>

@@ -35,6 +35,7 @@ class User extends Authenticatable
         'user_type',
         'user_type',
         'password',
+        'stripe_cus'
     ];
 
     /**

@@ -24,4 +24,9 @@ class Rentals extends Model
         return $this->hasMany(RentalsAddons::class, 'rental_id', 'id');
     }
 
+    public function availability()
+    {
+        return $this->hasMany(RentalsAvailability::class, 'rental_id', 'id');
+    }
+
 }

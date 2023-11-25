@@ -90,7 +90,8 @@
                                                     class="fas fa-angle-down"></i></button>
                                         </div>
                                         <ul class="user-profile-list">
-                                            <li><a href="profile.php">Profile</a></li>
+                                            <li><a href="profile.php">Dashboard</a></li>
+                                            <li><a href="{{ route('user.profile') }}">Profile</a></li>
                                             <li><a href="chat.php">Messages</a></li>
                                             <li><a href="my-bookings.php">Bookings</a></li>
                                             <li><a href="{{ route('logout') }}"

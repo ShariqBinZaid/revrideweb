@@ -81,12 +81,17 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <ul class="event-slider">
-
                         @foreach ($categories as $key => $category)
+                        @php
+                        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $category->title)));
+                        @endphp
                             <li>
-                                <a href="#">
+                                <a href="{{ route('sport.by.category', ['slug' => $slug, 'id' => $category->id]) }}" data-slug="{{ $slug }}">
                                     <div class="category-box text-center">
-                                        <img src="{{ env('API_URL') }}{{ ('storage/' . $category->image) }}" alt="">
+                                        @if(array_key_exists($slug, $images))
+                                        <img src="{{ asset($images[$slug]) }}" alt="">
+                                        @else
+                                        @endif
                                         <h5>{{ $category->title }}</h5>
                                     </div>
                                 </a>
@@ -198,10 +203,10 @@
                             higher, leap farther, and dive into your wildest ideas.
                         </p>
                         <div class="about-list mb-30">
-                            <div>
+                            {{-- <div>
                                 <h1>0%</h1>
                                 <h6>Death Rate </h6>
-                            </div>
+                            </div> --}}
                             <div>
                                 <p>You will survive to tell the tale, guaranteed, or your ghost rides free.</p>
                             </div>
