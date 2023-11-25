@@ -97,6 +97,7 @@ class UserController extends Controller
     public function order(Request $request){
 
         $cart = Session::get('cart');
+        dd($total_price = (float)$total_price);
 
         \Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
 
@@ -178,6 +179,7 @@ class UserController extends Controller
                     $data->infants = $infants;
                     $data->rental_availability_id = $rental_availability_id;
                     $data->total = (float)$total;
+                    $data->transaction_id = $charge->id;
                     $data->save();
 
                     foreach($cart['addons'] as $key => $addons){

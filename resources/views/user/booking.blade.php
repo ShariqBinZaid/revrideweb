@@ -38,6 +38,32 @@
                             <h1>MY BOOKING</h1>
                         </div>
                     </div>
+                    <div class="table-responsive">
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Duration</th>
+                                    <th>ID Number</th>
+                                    <th>Insurance</th>
+                                    <th>Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(Auth::user()->get_booking as $key => $booking)
+                                <tr>
+                                    <td></td>
+                                    <td>{{ date('d M, Y h:i a', strtotime($booking->datetime)) }}</td>
+                                    <td>{{ $booking->booking_code }}</td>
+                                    <td>{{ $booking->duration }} Hours</td>
+                                    <td>${{ $booking->insurance_amount }}</td>
+                                    <td>${{ $booking->total }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
